@@ -76,6 +76,21 @@ body {
   text-decoration: line-through;
 }
 
+#tasks li .destroy {
+  position: absolute;
+  right: 10px;
+  top: 16px;
+  display: none;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: url(../images/destroy.png) no-repeat center center;
+}
+
+#tasks li:hover .destroy {
+  display: block;
+}
+
 #tasks footer {
   display: block;
   margin: 20px -20px -20px -20px;

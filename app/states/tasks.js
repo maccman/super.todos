@@ -50,6 +50,10 @@
       task.save();
     });
     
+    this.tasks.delegate(".destroy", "click", function(){
+      $(this).item().destroy();
+    });
+    
     // Bind the list to the Task model changes.
     this.tasks.connect(Task).render();
   });
