@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/application.css" type="text/css" charset="utf-8">
+  
+  <script src="lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="lib/jquery.tmpl.js" type="text/javascript" charset="utf-8"></script>
+  <script src="lib/superclass.js" type="text/javascript" charset="utf-8"></script>
+  <script src="lib/superevent.js" type="text/javascript" charset="utf-8"></script>
+  <script src="lib/superapp.js" type="text/javascript" charset="utf-8"></script>
+  <script src="lib/superapp.view.js" type="text/javascript" charset="utf-8"></script>
+  <script src="lib/supermodel.js" type="text/javascript" charset="utf-8"></script>
+  <script src="lib/supermodel.marshal.js" type="text/javascript" charset="utf-8"></script>
+  <script src="lib/superconnect.js" type="text/javascript" charset="utf-8"></script>
+
+  <script src="app/shared.js" type="text/javascript" charset="utf-8"></script>  
+  <script src="app/application.js" type="text/javascript" charset="utf-8"></script>
+  <script src="app/models/task.js" type="text/javascript" charset="utf-8"></script>
+  <script src="app/states/tasks.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+  <div id="views">
+    <div data-view="tasks" id="tasks">
+      <h1>Todos</h1>
+      
+      <form data-name="form">
+        <input type="text" data-name="input" placeholder="What needs to be done?">
+      </form>
+      
+      <ul data-name="tasks">
+        <li><input type="checkbox"> <span>${name}</span></li>
+      </ul>
+      
+      <footer>
+        <a data-name="butClear" class="clear">Clear completed</a>
+        <div class="count"><span data-name="count"></span> left</div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
